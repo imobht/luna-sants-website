@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Sants - Modern Fusion Dining</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="Luna Sants - Experience modern fusion dining in the heart of Barcelona">
+    <meta name="theme-color" content="#1A1A1A">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.0/css/lightgallery.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Luna Sants</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="video-background">
+                <video autoplay muted loop playsinline>
+                    <source src="images/hero-video.mp4" type="video/mp4">
+                </video>
+                <div class="overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h1>Luna Sants</h1>
+                <p>Experience modern fusion dining in the heart of Barcelona</p>
+                <div class="hero-buttons">
+                    <a href="#reservation" class="cta-button">Make a Reservation</a>
+                    <a href="menu.html" class="secondary-button">View Menu</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <h2>Our Gallery</h2>
+            <div class="gallery-grid">
+                <a href="images/gallery1.jpg" class="gallery-item">
+                    <img src="images/gallery1.jpg" alt="Traditional Nepali Dining">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </a>
+                <a href="images/gallery2.jpg" class="gallery-item">
+                    <img src="images/gallery2.jpg" alt="Chinese Wok Station">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </a>
+                <a href="images/gallery3.jpg" class="gallery-item">
+                    <img src="images/gallery3.jpg" alt="Japanese Sushi Bar">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </a>
+                <a href="images/gallery4.jpg" class="gallery-item">
+                    <img src="images/gallery4.jpg" alt="Fusion Dining Experience">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="reservation" class="reservation-section">
+            <div class="reservation-header">
+                <h2>Book Your Table</h2>
+                <p>Experience the perfect dining atmosphere at Luna Sants</p>
+            </div>
+            <div class="reservation-container">
+                <form class="reservation-form" action="https://formspree.io/f/xwpoknnb" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">
+                                <i class="fas fa-calendar"></i>
+                                Date
+                            </label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">
+                                <i class="fas fa-clock"></i>
+                                Time
+                            </label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="guests">
+                                <i class="fas fa-users"></i>
+                                Number of Guests
+                            </label>
+                            <input type="number" id="guests" name="guests" min="1" max="20" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="restaurant">
+                                <i class="fas fa-utensils"></i>
+                                Dining Area
+                            </label>
+                            <select id="restaurant" name="dining_area" required>
+                                <option value="">Select a Dining Area</option>
+                                <option value="nepali">Traditional Nepali Hall</option>
+                                <option value="chinese">Chinese Wok Corner</option>
+                                <option value="japanese">Japanese Sushi Bar</option>
+                                <option value="fusion">Fusion Dining Space</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i>
+                                Name
+                            </label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i>
+                                Email
+                            </label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">
+                                <i class="fas fa-phone"></i>
+                                Phone
+                            </label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="special-requests">
+                                <i class="fas fa-comment"></i>
+                                Special Requests
+                            </label>
+                            <textarea id="special-requests" name="special_requests" rows="3" placeholder="Any dietary restrictions or special occasions?"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="submit-button">
+                            <i class="fas fa-check"></i>
+                            Confirm Reservation
+                        </button>
+                    </div>
+                </form>
+                <div class="reservation-info">
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Opening Hours</h3>
+                        <p>Monday - Friday: 11:00 AM - 10:00 PM</p>
+                        <p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-info-circle"></i>
+                        <h3>Reservation Policy</h3>
+                        <p>• Reservations recommended</p>
+                        <p>• Special dietary requests accommodated</p>
+                        <p>• Wheelchair accessible</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <h3>Need Help?</h3>
+                        <p>Call us at: +34 123 456 789</p>
+                        <p>Email: info@lunasants.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="location" class="location-section">
+        <h2>Find Us</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.36588036886!2d2.137234!3d41.3820511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49996b745340f%3A0xaf1b46b86b8d84b3!2sLuna%20Sants!5e0!3m2!1sen!2ses!4v1647856781234!5m2!1sen!2ses" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="location-info">
+            <h3>Our Location</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Luna Sants, Sants-Montjuïc, Barcelona</p>
+            <p><i class="fas fa-phone"></i> +34 123 456 789</p>
+            <p><i class="fas fa-envelope"></i> info@lunasants.com</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-header">
+            <h2>Get in Touch</h2>
+            <p>We'd love to hear from you at Luna Sants. Reach out to us through any of these channels.</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>Luna Sants</p>
+                    <p>Sants-Montjuïc, Barcelona</p>
+                    <a href="#location" class="contact-link">View on Map <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="contact-card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>+34 123 456 789</p>
+                    <p>Monday - Sunday</p>
+                    <p>10:00 AM - 11:00 PM</p>
+                </div>
+                <div class="contact-card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>info@lunasants.com</p>
+                    <p>reservations@lunasants.com</p>
+                    <a href="mailto:info@lunasants.com" class="contact-link">Send Email <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="contact-card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Opening Hours</h3>
+                    <div class="hours-grid">
+                        <div class="day">Monday - Friday</div>
+                        <div class="time">11:00 AM - 10:00 PM</div>
+                        <div class="day">Saturday - Sunday</div>
+                        <div class="time">10:00 AM - 11:00 PM</div>
+                        <div class="day">Holidays</div>
+                        <div class="time">10:00 AM - 10:00 PM</div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-container">
+                <h3>Send us a Message</h3>
+                <form class="contact-form" action="https://formspree.io/f/xwpoknnb" method="POST">
+                    <div class="form-group">
+                        <label for="contact-name">
+                            <i class="fas fa-user"></i>
+                            Your Name
+                        </label>
+                        <input type="text" id="contact-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">
+                            <i class="fas fa-envelope"></i>
+                            Your Email
+                        </label>
+                        <input type="email" id="contact-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject">
+                            <i class="fas fa-tag"></i>
+                            Subject
+                        </label>
+                        <input type="text" id="contact-subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">
+                            <i class="fas fa-comment"></i>
+                            Your Message
+                        </label>
+                        <textarea id="contact-message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="social-connect">
+            <h3>Connect With Us</h3>
+            <div class="social-links">
+                <a href="#" class="social-link">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-tripadvisor"></i>
+                    <span>TripAdvisor</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Luna Sants</p>
+                <p>Sants-Montjuïc, Barcelona</p>
+                <p><i class="fas fa-phone"></i> +34 123 456 789</p>
+                <p><i class="fas fa-envelope"></i> info@lunasants.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Opening Hours</h4>
+                <p>Monday - Friday: 11:00 AM - 10:00 PM</p>
+                <p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+                <p>Holidays: 10:00 AM - 10:00 PM</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Luna Sants. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.0/lightgallery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

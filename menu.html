@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Luna Sants</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="new_menu_style.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="Luna Sants - Experience modern fusion dining in the heart of Barcelona">
+    <meta name="theme-color" content="#1A1A1A">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Luna Sants</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="index.html#gallery">Gallery</a></li>
+                <li><a href="index.html#reservation">Reservation</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="menu-header-section" style="padding-top: 96px; padding-bottom: 40px; background: #fff; text-align: center; border-bottom: 2px solid #1A1A1A;">
+            <div class="header-content" style="display: flex; flex-direction: column; align-items: center; gap: 18px;">
+                <h1 class="hero-title" style="margin-top: 0;">Our Menu</h1>
+                <div id="table-number-display" class="table-number-display"></div>
+                <button class="cart-button" onclick="toggleCart()" style="margin-top: 32px;">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </section>
+        <section class="menu-section">
+            <h2>Bocadillos Fríos y Calientes / Cold & Hot Sandwiches</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="images/queso.jpg" alt="Bocadillo de Queso" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Queso</h3>
+                        <p class="item-price">€4.00</p>
+                        <p class="item-description-es">Bocadillo de queso</p>
+                        <p class="item-description">Cheese sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+            </div>
+            </div>
+
+                        <div class="menu-item">
+                    <img src="images/jamon-serrano.jpg" alt="Bocadillo de Jamón Serrano" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Jamón Serrano</h3>
+                        <p class="item-price">€4.00</p>
+                        <p class="item-description-es">Bocadillo de jamón serrano</p>
+                        <p class="item-description">Serrano ham sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                        <div class="menu-item">
+                    <img src="images/jamon-york.jpg" alt="Bocadillo de Jamón York" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Jamón York</h3>
+                        <p class="item-price">€4.00</p>
+                        <p class="item-description-es">Bocadillo de jamón york</p>
+                        <p class="item-description">Cooked ham sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                        <div class="menu-item">
+                    <img src="images/jamon-york-queso.jpg" alt="Bocadillo de Jamón York con Queso" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Jamón York con Queso</h3>
+                        <p class="item-price">€4.50</p>
+                        <p class="item-description">Cooked ham and cheese sandwich</p>
+                        <p class="item-description-es">Bocadillo de jamón york con queso</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/chorizo.jpg" alt="Bocadillo de Chorizo" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Chorizo</h3>
+                        <p class="item-price">€4.00</p>
+                        <p class="item-description-es">Bocadillo de chorizo</p>
+                        <p class="item-description">Chorizo sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/chorizo-queso.jpg" alt="Bocadillo de Chorizo con Queso" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Chorizo con Queso</h3>
+                        <p class="item-price">€4.50</p>
+                        <p class="item-description-es">Bocadillo de chorizo con queso</p>
+                        <p class="item-description">Chorizo and cheese sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/salchichon.jpg" alt="Bocadillo de Salchichón" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Salchichón</h3>
+                        <p class="item-price">€4.00</p>
+                        <p class="item-description-es">Bocadillo de salchichón</p>
+                        <p class="item-description">Salchichón (Spanish sausage) sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/salchichon-queso.jpg" alt="Bocadillo de Salchichón con Queso" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Salchichón con Queso</h3>
+                        <p class="item-price">€4.50</p>
+                        <p class="item-description-es">Bocadillo de salchichón con queso</p>
+                        <p class="item-description">Salchichón and cheese sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/fuet.jpg" alt="Bocadillo de Fuet" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Fuet</h3>
+                        <p class="item-price">€4.00</p>
+                        <p class="item-description-es">Bocadillo de fuet</p>
+                        <p class="item-description">Fuet (Catalan cured sausage) sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                        <div class="menu-item">
+                    <img src="images/fuet-queso.jpg" alt="Bocadillo de Fuet con Queso" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Fuet con Queso</h3>
+                        <p class="item-price">€4.50</p>
+                        <p class="item-description-es">Bocadillo de fuet con queso</p>
+                        <p class="item-description">Fuet and cheese sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/sobrasada.jpg" alt="Bocadillo de Sobrasada" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Sobrasada</h3>
+                        <p class="item-price">€4.00</p>
+                        <p class="item-description-es">Bocadillo de sobrasada</p>
+                        <p class="item-description">Sobrasada (Majorcan sausage) sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/sobrasada-queso.jpg" alt="Bocadillo de Sobrasada con Queso" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Sobrasada con Queso</h3>
+                        <p class="item-price">€4.50</p>
+                        <p class="item-description-es">Bocadillo de sobrasada con queso</p>
+                        <p class="item-description">Sobrasada and cheese sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/atun.jpg" alt="Bocadillo de Atún" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Atún</h3>
+                        <p class="item-price">€4.00</p>
+                        <p class="item-description-es">Bocadillo de atún</p>
+                        <p class="item-description">Tuna sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/vegetal-atun.jpg" alt="Bocadillo Vegetal de Atún" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo Vegetal de Atún</h3>
+                        <p class="item-price">€4.50</p>
+                        <p class="item-description-es">Bocadillo vegetal de atún</p>
+                        <p class="item-description">Vegetable and tuna sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/tortilla-queso.jpg" alt="Bocadillo de Tortilla Francesa con Queso" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Tortilla Francesa con Queso</h3>
+                        <p class="item-price">€4.00</p>
+                        <p class="item-description-es">Bocadillo de tortilla francesa con queso</p>
+                        <p class="item-description">French omelette with cheese sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/tortilla-patata.jpg" alt="Bocadillo de Tortilla de Patata" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Tortilla de Patata</h3>
+                        <p class="item-price">€4.00</p>
+                        <p class="item-description-es">Bocadillo de tortilla de patata</p>
+                        <p class="item-description">Spanish potato omelette sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/tortilla-atun.jpg" alt="Bocadillo de Tortilla de Atún" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Tortilla de Atún</h3>
+                        <p class="item-price">€4.50</p>
+                        <p class="item-description-es">Bocadillo de tortilla de atún</p>
+                        <p class="item-description">Tuna omelette sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/tortilla-espinacas.jpg" alt="Bocadillo de Tortilla de Espinacas" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Tortilla de Espinacas</h3>
+                        <p class="item-price">€4.50</p>
+                        <p class="item-description-es">Bocadillo de tortilla de espinacas</p>
+                        <p class="item-description">Spinach omelette sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/tortilla-espinacas-queso.jpg" alt="Bocadillo de Tortilla de Espinacas con Queso" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Tortilla de Espinacas con Queso</h3>
+                        <p class="item-price">€4.50</p>
+                        <p class="item-description-es">Bocadillo de tortilla de espinacas con queso</p>
+                        <p class="item-description">Spinach omelette with cheese sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/tortilla-calabacin.jpg" alt="Bocadillo de Tortilla de Calabacín" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Tortilla de Calabacín</h3>
+                        <p class="item-price">€4.50</p>
+                        <p class="item-description-es">Bocadillo de tortilla de calabacín</p>
+                        <p class="item-description">Zucchini omelette sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/tortilla-calabacin-queso.jpg" alt="Bocadillo de Tortilla de Calabacín con Queso" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Tortilla de Calabacín con Queso</h3>
+                        <p class="item-price">€4.50</p>
+                        <p class="item-description-es">Bocadillo de tortilla de calabacín con queso</p>
+                        <p class="item-description">Zucchini omelette with cheese sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/pollo.jpg" alt="Bocadillo de Pollo" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Pollo</h3>
+                        <p class="item-price">€4.50</p>
+                        <p class="item-description-es">Bocadillo de pollo</p>
+                        <p class="item-description">Chicken sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/pollo-queso.jpg" alt="Bocadillo de Pollo con Queso" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Pollo con Queso</h3>
+                        <p class="item-price">€4.50</p>
+                        <p class="item-description-es">Bocadillo de pollo con queso</p>
+                        <p class="item-description">Chicken and cheese sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                        <div class="menu-item">
+                    <img src="images/bacon.jpg" alt="Bocadillo de Bacon" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Bacon</h3>
+                        <p class="item-price">€4.00</p>
+                        <p class="item-description-es">Bocadillo de bacon</p>
+                        <p class="item-description">Bacon sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/bacon-queso.jpg" alt="Bocadillo de Bacon con Queso" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Bacon con Queso</h3>
+                        <p class="item-price">€4.50</p>
+                        <p class="item-description-es">Bocadillo de bacon con queso</p>
+                        <p class="item-description">Bacon and cheese sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/lomo.jpg" alt="Bocadillo de Lomo" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Lomo</h3>
+                        <p class="item-price">€4.00</p>
+                        <p class="item-description-es">Bocadillo de lomo</p>
+                        <p class="item-description">Pork loin sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/lomo-queso.jpg" alt="Bocadillo de Lomo con Queso" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Lomo con Queso</h3>
+                        <p class="item-price">€4.50</p>
+                        <p class="item-description-es">Bocadillo de lomo con queso</p>
+                        <p class="item-description">Pork loin and cheese sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                        <div class="menu-item">
+                    <img src="images/frankfurt.jpg" alt="Bocadillo de Frankfurt" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Frankfurt</h3>
+                        <p class="item-price">€4.00</p>
+                        <p class="item-description-es">Bocadillo de frankfurt</p>
+                        <p class="item-description">Frankfurt sausage sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/frankfurt-doble.jpg" alt="Bocadillo de Frankfurt Doble" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Frankfurt Doble</h3>
+                        <p class="item-price">€4.20</p>
+                        <p class="item-description-es">Bocadillo de frankfurt doble</p>
+                        <p class="item-description">Double frankfurt sausage sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/butifarra.jpg" alt="Bocadillo de Butifarra" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Butifarra</h3>
+                        <p class="item-price">€4.20</p>
+                        <p class="item-description-es">Bocadillo de butifarra</p>
+                        <p class="item-description">Catalan sausage sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/butifarra-queso.jpg" alt="Bocadillo de Butifarra con Queso" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bocadillo de Butifarra con Queso</h3>
+                        <p class="item-price">€4.50</p>
+                        <p class="item-description-es">Bocadillo de butifarra con queso</p>
+                        <p class="item-description">Catalan sausage with cheese sandwich</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Tapas</h2>
+            <div class="menu-grid">
+                        <div class="menu-item">
+                    <img src="images/olivas.jpg" alt="Olivas" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Olivas</h3>
+                        <p class="item-price">€1.90</p>
+                        <p class="item-description-es">Olivas</p>
+                        <p class="item-description">Olives</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/pan-tomate.jpg" alt="Pan con Tomate" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Pan con Tomate y Aceite de Oliva Virgen</h3>
+                        <p class="item-price">€2.50</p>
+                        <p class="item-description-es">Pan con tomate y aceite de oliva virgen</p>
+                        <p class="item-description">Bread with tomato and extra virgin olive oil</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/queso-manchego.jpg" alt="Queso Manchego" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Queso Manchego</h3>
+                        <p class="item-price">€5.90</p>
+                        <p class="item-description-es">Queso manchego</p>
+                        <p class="item-description">Manchego cheese</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/patatas-bravas.jpg" alt="Patatas Bravas" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Patatas Bravas con Alioli y Salsa Brava</h3>
+                        <p class="item-price">€4.00</p>
+                        <p class="item-description-es">Patatas bravas con alioli y salsa brava</p>
+                        <p class="item-description">Fried potatoes with alioli and spicy sauce</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/patatas-fritas.jpg" alt="Patatas Fritas" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Patatas Fritas</h3>
+                        <p class="item-price">€4.00</p>
+                        <p class="item-description-es">Patatas fritas</p>
+                        <p class="item-description">French fries</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                        <div class="menu-item">
+                    <img src="images/alitas-pollo.jpg" alt="Alitas de Pollo" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Alitas de Pollo Frito con Salsa Barbacoa</h3>
+                        <p class="item-price">€6.20</p>
+                        <p class="item-description-es">Alitas de pollo frito con salsa barbacoa</p>
+                        <p class="item-description">Fried chicken wings with barbecue sauce</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/croquetas.jpg" alt="Croquetas" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Croquetas de Jamón</h3>
+                        <p class="item-price">€4.90</p>
+                        <p class="item-description-es">Croquetas de jamón</p>
+                        <p class="item-description">Ham croquettes</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                    <img src="images/gambas-ajillo.jpg" alt="Gambas al Ajillo" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Gambas al Ajillo</h3>
+                        <p class="item-price">€8.50</p>
+                        <p class="item-description-es">Gambas al ajillo</p>
+                        <p class="item-description">Garlic prawns</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Ensaladas / Salads</h2>
+            <div class="menu-grid">
+                        <div class="menu-item">
+                    <img src="images/tomate-ventresca.jpg" alt="Tomate Temporada con Ventresca de Atún y Aceite de Oliva" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Tomate Temporada con Ventresca de Atún y Aceite de Oliva</h3>
+                        <p class="item-price">€7.50</p>
+                        <p class="item-description-es">Tomate temporada con ventresca de atún y aceite de oliva</p>
+                        <p class="item-description">Seasonal tomato with tuna belly and olive oil</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                <div class="menu-item">
+                    <img src="images/ensalada-verde.jpg" alt="Ensalada Verde con Tomate Cherry, Maíz, Nueces y Picatostes" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Ensalada Verde con Tomate Cherry, Maíz, Nueces y Picatostes</h3>
+                        <p class="item-price">€6.50</p>
+                        <p class="item-description-es">Ensalada verde con tomate cherry, maíz, nueces y picatostes</p>
+                        <p class="item-description">Green salad with cherry tomato, corn, walnuts, and croutons</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                    <img src="images/ensaladilla-rusa.jpg" alt="Ensaladilla Rusa" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Ensaladilla Rusa</h3>
+                        <p class="item-price">€5.50</p>
+                        <p class="item-description-es">Ensaladilla rusa</p>
+                        <p class="item-description">Russian salad (potato salad with tuna, vegetables, and mayonnaise)</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Raciones / Portions</h2>
+            <div class="menu-grid">
+                        <div class="menu-item">
+                    <img src="images/pimientos-padron.jpg" alt="Pimientos de Padrón con Sal Maldon" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Pimientos de Padrón con Sal Maldon</h3>
+                        <p class="item-price">€4.20</p>
+                        <p class="item-description-es">Pimientos de padrón con sal maldon</p>
+                        <p class="item-description">Padrón peppers with Maldon salt</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                <div class="menu-item">
+                    <img src="images/langostinos.jpg" alt="Langostinos a la Plancha con Verduras, Salsa Ajo y Perejil" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Langostinos a la Plancha con Verduras, Salsa Ajo y Perejil</h3>
+                        <p class="item-price">€8.90</p>
+                        <p class="item-description-es">Langostinos a la plancha con verduras, salsa ajo y perejil</p>
+                        <p class="item-description">Grilled king prawns with vegetables, garlic and parsley sauce</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                    <img src="images/calamares.jpg" alt="Calamares a la Andaluza con Alioli" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Calamares a la Andaluza con Alioli</h3>
+                        <p class="item-price">€8.50</p>
+                        <p class="item-description-es">Calamares a la andaluza con alioli</p>
+                        <p class="item-description">Andalusian-style fried squid with aioli</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                <div class="menu-item">
+                    <img src="images/tortilla-cebolla.jpg" alt="Pincho de Tortilla de Patata y Cebolla con Pan con Tomate" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Pincho de Tortilla de Patata y Cebolla con Pan con Tomate</h3>
+                        <p class="item-price">€4.90</p>
+                        <p class="item-description-es">Pincho de tortilla de patata y cebolla con pan con tomate</p>
+                        <p class="item-description">Spanish omelette with onion, served with bread and tomato</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                    <img src="images/tortilla-verduras.jpg" alt="Pincho de Tortilla de Patata y Verduras Mixtas" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Pincho de Tortilla de Patata y Verduras Mixtas</h3>
+                        <p class="item-price">€5.00</p>
+                        <p class="item-description-es">Pincho de tortilla de patata y verduras mixtas</p>
+                        <p class="item-description">Spanish omelette with mixed vegetables</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                <div class="menu-item">
+                    <img src="images/mejillones.jpg" alt="Mejillones a la Marinera" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Mejillones a la Marinera</h3>
+                        <p class="item-price">€6.00</p>
+                        <p class="item-description-es">Mejillones a la marinera</p>
+                        <p class="item-description">Sailor-style mussels</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                    </div>
+                        <div class="menu-item">
+                    <img src="images/brochetas.jpg" alt="Brochetas de Pollo y Cerdo (8 unidades)" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Brochetas de Pollo y Cerdo (8 unidades)</h3>
+                        <p class="item-price">€5.50</p>
+                        <p class="item-description-es">Brochetas de pollo y cerdo (8 unidades)</p>
+                        <p class="item-description">Chicken and pork skewers (8 pieces)</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                <div class="menu-item">
+                    <img src="images/albondegas.jpg" alt="Albóndigas en Salsa" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Albóndigas en Salsa</h3>
+                        <p class="item-price">€5.50</p>
+                        <p class="item-description-es">Albóndigas en salsa</p>
+                        <p class="item-description">Meatballs in sauce</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                        <div class="menu-item">
+                    <img src="images/huevos-rotos.jpg" alt="Huevos Rotos con Jamón" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Huevos Rotos con Jamón</h3>
+                        <p class="item-price">€5.50</p>
+                        <p class="item-description-es">Huevos rotos con jamón</p>
+                        <p class="item-description">Broken eggs with ham</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                        <div class="menu-item">
+                    <img src="images/huevos-fritos.jpg" alt="Huevos Fritos con Jamón" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Huevos Fritos con Jamón</h3>
+                        <p class="item-price">€5.50</p>
+                        <p class="item-description-es">Huevos fritos con jamón</p>
+                        <p class="item-description">Fried eggs with ham</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Platos Combinados / Dishes</h2>
+            <div class="menu-grid">
+                        <div class="menu-item">
+                    <img src="images/huevos-estrellados.jpg" alt="Huevos Estrellados con Patatas y Jamón" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Huevos Estrellados con Patatas y Jamón</h3>
+                        <p class="item-price">€6.80</p>
+                        <p class="item-description-es">Huevos estrellados con patatas y jamón</p>
+                        <p class="item-description">Fried eggs with potatoes and ham</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                <div class="menu-item">
+                    <img src="images/calamares-plancha.jpg" alt="Calamares a la Plancha con Verduras y Salsa de Ajo-Perejil" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Calamares a la Plancha con Verduras y Salsa de Ajo-Perejil</h3>
+                        <p class="item-price">€8.90</p>
+                        <p class="item-description-es">Calamares a la plancha con verduras y salsa de ajo-perejil</p>
+                        <p class="item-description">Grilled squid with vegetables and garlic-parsley sauce</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                    </div>
+                        <div class="menu-item">
+                    <img src="images/entrecot.jpg" alt="Entrecot de Ternera a la Brasa con Patata 250g" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Entrecot de Ternera a la Brasa con Patata 250g</h3>
+                        <p class="item-price">€15.90</p>
+                        <p class="item-description-es">Entrecot de ternera a la brasa con patata 250g</p>
+                        <p class="item-description">Grilled beef entrecote with potatoes (250g)</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                <div class="menu-item">
+                    <img src="images/butifarra.jpg" alt="Butifarra con Patatas y Dos Huevos Fritos" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Butifarra con Patatas y Dos Huevos Fritos</h3>
+                        <p class="item-price">€7.80</p>
+                        <p class="item-description-es">Butifarra con patatas y dos huevos fritos</p>
+                        <p class="item-description">Catalan sausage with potatoes and two fried eggs</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                    <img src="images/lomo.jpg" alt="Lomo a la Plancha con Patatas y Dos Huevos Fritos" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Lomo a la Plancha con Patatas y Dos Huevos Fritos</h3>
+                        <p class="item-price">€7.80</p>
+                        <p class="item-description-es">Lomo a la plancha con patatas y dos huevos fritos</p>
+                        <p class="item-description">Grilled pork loin with potatoes and two fried eggs</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                <div class="menu-item">
+                    <img src="images/pollo-patatas.jpg" alt="Pechuga de Pollo con Patatas Fritas y Ensalada" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Pechuga de Pollo con Patatas Fritas y Ensalada</h3>
+                        <p class="item-price">€8.50</p>
+                        <p class="item-description-es">Pechuga de pollo con patatas fritas y ensalada</p>
+                        <p class="item-description">Chicken breast with fries and salad</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                <div class="menu-item">
+                    <img src="images/tallarines.jpg" alt="Tallarines a la Marinera (Mejillones, Gambas, Chocos, Calamares)" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Tallarines a la Marinera (Mejillones, Gambas, Chocos, Calamares)</h3>
+                        <p class="item-price">€8.90</p>
+                        <p class="item-description-es">Tallarines a la marinera (mejillones, gambas, chocos, calamares)</p>
+                        <p class="item-description">Seafood noodles (mussels, prawns, cuttlefish, squid)</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/churrasco.jpg" alt="Churrasco a la Plancha con Patatas Fritas y Ensalada" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Churrasco a la Plancha con Patatas Fritas y Ensalada</h3>
+                        <p class="item-price">€8.90</p>
+                        <p class="item-description-es">Churrasco a la plancha con patatas fritas y ensalada</p>
+                        <p class="item-description">Grilled churrasco with fries and salad</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                                    </div>
+                                    </div>
+                <div class="menu-item">
+                    <img src="images/bistec.jpg" alt="Bistec de Ternera a la Plancha con Patatas Fritas y Ensalada" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Bistec de Ternera a la Plancha con Patatas Fritas y Ensalada</h3>
+                        <p class="item-price">€8.90</p>
+                        <p class="item-description-es">Bistec de ternera a la plancha con patatas fritas y ensalada</p>
+                        <p class="item-description">Grilled beef steak with fries and salad</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                                    </div>
+                <div class="menu-item">
+                    <img src="images/pollo-huevos.jpg" alt="Pechuga de Pollo con Patatas Fritas y Dos Huevos" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Pechuga de Pollo con Patatas Fritas y Dos Huevos</h3>
+                        <p class="item-price">€7.90</p>
+                        <p class="item-description-es">Pechuga de pollo con patatas fritas y dos huevos</p>
+                        <p class="item-description">Chicken breast with fries and two eggs</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                                    </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Paellas</h2>
+            <div class="menu-grid">
+                        <div class="menu-item">
+                    <img src="images/paella-marinera.jpg" alt="Paella Marinera con Langostino, Mejillones, Chocos, Calamares" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Paella Marinera con Langostino, Mejillones, Chocos, Calamares</h3>
+                        <p class="item-price">€14.50</p>
+                        <p class="item-description-es">Paella marinera con langostino, mejillones, chocos, calamares</p>
+                        <p class="item-description">Seafood paella with king prawns, mussels, cuttlefish, and squid</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                <div class="menu-item">
+                    <img src="images/paella-pollo.jpg" alt="Paella de Pollo y Verduras" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Paella de Pollo y Verduras</h3>
+                        <p class="item-price">€13.50</p>
+                        <p class="item-description-es">Paella de pollo y verduras</p>
+                        <p class="item-description">Chicken and vegetable paella</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                    <img src="images/paella-negra.jpg" alt="Paella Negra con Langostinos, Mejillones, Chocos, Calamares" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Paella Negra con Langostinos, Mejillones, Chocos, Calamares</h3>
+                        <p class="item-price">€14.50</p>
+                        <p class="item-description-es">Paella negra con langostinos, mejillones, chocos, calamares</p>
+                        <p class="item-description">Black rice paella with king prawns, mussels, cuttlefish, and squid</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                    <img src="images/paella-mixta.jpg" alt="Paella Mixta con Langostinos, Mejillones, Chocos, Calamares, Pollo" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Paella Mixta con Langostinos, Mejillones, Chocos, Calamares, Pollo</h3>
+                        <p class="item-price">€14.50</p>
+                        <p class="item-description-es">Paella mixta con langostinos, mejillones, chocos, calamares, pollo</p>
+                        <p class="item-description">Mixed paella with king prawns, mussels, cuttlefish, squid, and chicken</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Woks</h2>
+            <div class="menu-grid">
+                        <div class="menu-item">
+                    <img src="images/arroz-verduras.jpg" alt="Arroz Salteado con Verduras" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Arroz Salteado con Verduras</h3>
+                        <p class="item-price">€6.50</p>
+                        <p class="item-description-es">Arroz salteado con verduras</p>
+                        <p class="item-description">Stir-fried rice with vegetables</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                <div class="menu-item">
+                    <img src="images/arroz-pollo.jpg" alt="Arroz Salteado con Pollo" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Arroz Salteado con Pollo</h3>
+                        <p class="item-price">€7.00</p>
+                        <p class="item-description-es">Arroz salteado con pollo</p>
+                        <p class="item-description">Stir-fried rice with chicken</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                    <img src="images/arroz-gambas.jpg" alt="Arroz Salteado con Gambas" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Arroz Salteado con Gambas</h3>
+                        <p class="item-price">€8.50</p>
+                        <p class="item-description-es">Arroz salteado con gambas</p>
+                        <p class="item-description">Stir-fried rice with prawns</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                <div class="menu-item">
+                    <img src="images/pasta-huevo.jpg" alt="Salteado de pasta de arroz con huevo" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Salteado de pasta de arroz con huevo</h3>
+                        <p class="item-price">€7.00</p>
+                        <p class="item-description-es">Salteado de pasta de arroz con huevo</p>
+                        <p class="item-description">Stir-fried rice noodles with egg</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                    <img src="images/pasta-pollo.jpg" alt="Salteado de pasta de arroz con pollo" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Salteado de pasta de arroz con pollo</h3>
+                        <p class="item-price">€7.50</p>
+                        <p class="item-description-es">Salteado de pasta de arroz con pollo</p>
+                        <p class="item-description">Stir-fried rice noodles with chicken</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                <div class="menu-item">
+                    <img src="images/pasta-gambas.jpg" alt="Salteado de pasta de arroz con gambas" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Salteado de pasta de arroz con gambas</h3>
+                        <p class="item-price">€8.50</p>
+                        <p class="item-description-es">Salteado de pasta de arroz con gambas</p>
+                        <p class="item-description">Stir-fried rice noodles with prawns</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                    <img src="images/tallarines-pollo.jpg" alt="Salteado de tallarines con pollo" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Salteado de tallarines con pollo</h3>
+                        <p class="item-price">€7.50</p>
+                        <p class="item-description-es">Salteado de tallarines con pollo</p>
+                        <p class="item-description">Stir-fried noodles with chicken</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                        <div class="menu-item">
+                    <img src="images/pollo-yakisoba.jpg" alt="Pollo Yakisoba" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Pollo Yakisoba</h3>
+                        <p class="item-price">€8.30</p>
+                        <p class="item-description-es">Pollo yakisoba</p>
+                        <p class="item-description">Chicken yakisoba noodles</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Hamburguesas / Burgers</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="images/burger-ternera.jpg" alt="Burger de Ternera con Lechuga, Queso, Tomate y Patatas Fritas" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Burger de Ternera con Lechuga, Queso, Tomate y Patatas Fritas</h3>
+                        <p class="item-price">€8.90</p>
+                        <p class="item-description-es">Burger de ternera con lechuga, queso, tomate y patatas fritas</p>
+                        <p class="item-description">Beef burger with lettuce, cheese, tomato, and fries</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                                    </div>
+                            </div>
+                <div class="menu-item">
+                    <img src="images/burger-pollo.jpg" alt="Burger de Pollo Crujiente con Lechuga y Tomate" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Burger de Pollo Crujiente con Lechuga y Tomate</h3>
+                        <p class="item-price">€8.90</p>
+                        <p class="item-description-es">Burger de pollo crujiente con lechuga y tomate</p>
+                        <p class="item-description">Crispy chicken burger with lettuce and tomato</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                        <div class="menu-item">
+                    <img src="images/burger-tomate.jpg" alt="Burger con Tomate y Patatas Fritas" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Burger con Tomate y Patatas Fritas</h3>
+                        <p class="item-price">€8.50</p>
+                        <p class="item-description-es">Burger con tomate y patatas fritas</p>
+                        <p class="item-description">Burger with tomato and fries</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Cerveza / Beer</h2>
+            <div class="menu-grid">
+                        <div class="menu-item">
+                    <img src="images/estrelladamm.jpg" alt="Estrella Damm" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Estrella Damm</h3>
+                        <p class="item-price">€2.50</p>
+                        <p class="item-description-es">La cerveza lager más popular de Barcelona</p>
+                        <p class="item-description">Barcelona's most popular lager beer</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                <div class="menu-item">
+                    <img src="images/moritz.jpg" alt="Moritz" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Moritz</h3>
+                        <p class="item-price">€2.50</p>
+                        <p class="item-description-es">Cerveza tradicional de Barcelona desde 1856</p>
+                        <p class="item-description">Traditional Barcelona beer since 1856</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                    <img src="images/damm-limon.jpg" alt="Damm Lemon" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Damm Lemon</h3>
+                        <p class="item-price">€2.50</p>
+                        <p class="item-description-es">Cerveza refrescante con sabor a limón</p>
+                        <p class="item-description">Refreshing beer with lemon flavor</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                <div class="menu-item">
+                    <img src="images/estrella-galicia.jpg" alt="Estrella Galicia" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Estrella Galicia</h3>
+                        <p class="item-price">€2.50</p>
+                        <p class="item-description-es">Cerveza lager premium española</p>
+                        <p class="item-description">Premium Spanish lager beer</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                    <img src="images/san-miguel.jpg" alt="San Miguel" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">San Miguel</h3>
+                        <p class="item-price">€2.50</p>
+                        <p class="item-description-es">Cerveza lager clásica española</p>
+                        <p class="item-description">Classic Spanish lager beer</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                        <div class="menu-item">
+                    <img src="images/alhambra.jpg" alt="Alhambra" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Alhambra</h3>
+                        <p class="item-price">€2.50</p>
+                        <p class="item-description-es">Cerveza lager premium andaluza</p>
+                        <p class="item-description">Andalusian premium lager beer</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Carta de Vinos / Wine List</h2>
+            <div class="menu-grid">
+                        <div class="menu-item">
+                    <img src="images/copa-vino.jpg" alt="Copa de Vino" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Copa de Vino</h3>
+                        <p class="item-price">€2.50</p>
+                        <p class="item-description-es">Copa de vino de la casa</p>
+                        <p class="item-description">House wine by the glass</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                        <div class="menu-item">
+                    <img src="images/arnegui.jpg" alt="Arnegui Tempranillo Rioja" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Arnegui Tempranillo Rioja</h3>
+                        <p class="item-price">€13.50</p>
+                        <p class="item-description-es">Arnegui Tempranillo Rioja</p>
+                        <p class="item-description">Arnegui Tempranillo Rioja</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                        <div class="menu-item">
+                    <img src="images/vino-canta-manana.jpg" alt="Canta Mañana Ribera del Duero" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Canta Mañana Ribera del Duero</h3>
+                        <p class="item-price">€14.50</p>
+                        <p class="item-description-es">Canta Mañana Ribera del Duero</p>
+                        <p class="item-description">Canta Mañana Ribera del Duero</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                        <div class="menu-item">
+                    <img src="images/analivia.jpg" alt="Analivia Verdejo Viura" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Analivia Verdejo Viura</h3>
+                        <p class="item-price">€13.50</p>
+                        <p class="item-description-es">Vino blanco coupage</p>
+                        <p class="item-description">White wine blend</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                        <div class="menu-item">
+                    <img src="images/orquesta.jpg" alt="Orquesta Chardonnay" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Orquesta Chardonnay</h3>
+                        <p class="item-price">€13.50</p>
+                        <p class="item-description-es">Vino blanco Chardonnay</p>
+                        <p class="item-description">Chardonnay white wine</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Refrescos / Soft Drinks</h2>
+            <div class="menu-grid">
+                        <div class="menu-item">
+                    <img src="images/coca-cola.jpg" alt="Coca-Cola" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Coca-Cola</h3>
+                        <p class="item-price">€2.20</p>
+                        <p class="item-description-es">Coca-Cola</p>
+                        <p class="item-description">Coca-Cola</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                <div class="menu-item">
+                    <img src="images/coca-cola-zero.jpg" alt="Coca-Cola Zero" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Coca-Cola Zero</h3>
+                        <p class="item-price">€2.20</p>
+                        <p class="item-description-es">Coca-Cola Zero</p>
+                        <p class="item-description">Coca-Cola Zero</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                <div class="menu-item">
+                    <img src="images/fanta-naranja.jpg" alt="Fanta Naranja" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Fanta Naranja</h3>
+                        <p class="item-price">€2.20</p>
+                        <p class="item-description-es">Fanta Naranja</p>
+                        <p class="item-description">Fanta Orange</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                    <img src="images/fanta-limon.jpg" alt="Fanta Limón" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Fanta Limón</h3>
+                        <p class="item-price">€2.20</p>
+                        <p class="item-description-es">Fanta Limón</p>
+                        <p class="item-description">Fanta Lemon</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                <div class="menu-item">
+                    <img src="images/sprite.jpg" alt="Sprite" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Sprite</h3>
+                        <p class="item-price">€2.20</p>
+                        <p class="item-description-es">Sprite</p>
+                        <p class="item-description">Sprite</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                <div class="menu-item">
+                    <img src="images/aquarius-naranja.jpg" alt="Aquarius Naranja" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Aquarius Naranja</h3>
+                        <p class="item-price">€2.20</p>
+                        <p class="item-description-es">Aquarius Naranja</p>
+                        <p class="item-description">Aquarius Orange</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                <div class="menu-item">
+                    <img src="images/aquarius-limon.jpg" alt="Aquarius Limón" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Aquarius Limón</h3>
+                        <p class="item-price">€2.20</p>
+                        <p class="item-description-es">Aquarius Limón</p>
+                        <p class="item-description">Aquarius Lemon</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                <div class="menu-item">
+                    <img src="images/tonica.jpg" alt="Tónica" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Tónica</h3>
+                        <p class="item-price">€2.20</p>
+                        <p class="item-description-es">Tónica</p>
+                        <p class="item-description">Tonic Water</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                    <img src="images/aqua-bona.jpg" alt="Aigua Bona" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Aigua Bona</h3>
+                        <p class="item-price">€1.50</p>
+                        <p class="item-description-es">Agua mineral</p>
+                        <p class="item-description">Mineral water</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Zumos / Juices</h2>
+            <div class="menu-grid">
+                        <div class="menu-item">
+                    <img src="images/zumo-naranja.jpg" alt="Zumo de Naranja Natural" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Zumo de Naranja Natural</h3>
+                        <p class="item-price">€3.50</p>
+                        <p class="item-description-es">Zumo de naranja natural recién exprimido</p>
+                        <p class="item-description">Freshly squeezed orange juice</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                <div class="menu-item">
+                    <img src="images/zumo-pina.jpg" alt="Zumo de Piña" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Zumo de Piña</h3>
+                        <p class="item-price">€2.10</p>
+                        <p class="item-description-es">Zumo de piña</p>
+                        <p class="item-description">Pineapple juice</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                    <img src="images/zumo-melocoton.jpg" alt="Zumo de Melocotón" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Zumo de Melocotón</h3>
+                        <p class="item-price">€2.10</p>
+                        <p class="item-description-es">Zumo de melocotón</p>
+                        <p class="item-description">Peach juice</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                        <div class="menu-item">
+                    <img src="images/zumo-manzana.jpg" alt="Zumo de Manzana" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Zumo de Manzana</h3>
+                        <p class="item-price">€2.10</p>
+                        <p class="item-description-es">Zumo de manzana</p>
+                        <p class="item-description">Apple juice</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Postres / Desserts</h2>
+            <div class="menu-grid">
+                        <div class="menu-item">
+                    <img src="images/fruta.jpg" alt="Fruta del Día" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Fruta del Día</h3>
+                        <p class="item-price">€3.50</p>
+                        <p class="item-description-es">Fruta del día</p>
+                        <p class="item-description">Fruit of the day</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                <div class="menu-item">
+                    <img src="images/helado-vainilla.jpg" alt="Helado de Vainilla" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Helado de Vainilla</h3>
+                        <p class="item-price">€4.00</p>
+                        <p class="item-description-es">Helado de vainilla</p>
+                        <p class="item-description">Vanilla ice cream</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                    <img src="images/helado-chocolate.jpg" alt="Helado de Chocolate" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Helado de Chocolate</h3>
+                        <p class="item-price">€4.00</p>
+                        <p class="item-description-es">Helado de chocolate</p>
+                        <p class="item-description">Chocolate ice cream</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                        <div class="menu-item">
+                    <img src="images/tarta-casa.jpg" alt="Tarta de la Casa" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Tarta de la Casa</h3>
+                        <p class="item-price">€4.50</p>
+                        <p class="item-description-es">Tarta de la casa</p>
+                        <p class="item-description">House cake</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                    </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Cafés / Coffees</h2>
+            <div class="menu-grid">
+                        <div class="menu-item">
+                    <img src="images/cafe-solo.jpg" alt="Café Solo" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Café Solo</h3>
+                        <p class="item-price">€1.50</p>
+                        <p class="item-description-es">Café solo (espresso)</p>
+                        <p class="item-description">Single espresso</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                <div class="menu-item">
+                    <img src="images/cafe-cortado.jpg" alt="Café Cortado" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Café Cortado</h3>
+                        <p class="item-price">€1.80</p>
+                        <p class="item-description-es">Café cortado (espresso con un poco de leche)</p>
+                        <p class="item-description">Espresso with a dash of milk</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                    <img src="images/cafe-con-leche.jpg" alt="Café con Leche" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Café con Leche</h3>
+                        <p class="item-price">€2.20</p>
+                        <p class="item-description-es">Café con leche (espresso con leche caliente)</p>
+                        <p class="item-description">Espresso with hot milk</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                <div class="menu-item">
+                    <img src="images/cafe-americano.jpg" alt="Café Americano" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Café Americano</h3>
+                        <p class="item-price">€2.00</p>
+                        <p class="item-description-es">Café americano (espresso con agua caliente)</p>
+                        <p class="item-description">Espresso with hot water</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                    <img src="images/cafe-bombon.jpg" alt="Café Bombón" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Café Bombón</h3>
+                        <p class="item-price">€2.50</p>
+                        <p class="item-description-es">Café bombón (espresso con leche condensada)</p>
+                        <p class="item-description">Espresso with condensed milk</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                <div class="menu-item">
+                    <img src="images/cafe-carajillo.jpg" alt="Café Carajillo" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Café Carajillo</h3>
+                        <p class="item-price">€3.50</p>
+                        <p class="item-description-es">Café carajillo (espresso con brandy o whisky)</p>
+                        <p class="item-description">Espresso with brandy or whisky</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                    <img src="images/cafe-capuccino.jpg" alt="Cappuccino" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Cappuccino</h3>
+                        <p class="item-price">€2.80</p>
+                        <p class="item-description-es">Cappuccino (espresso con leche y espuma)</p>
+                        <p class="item-description">Espresso with steamed milk and foam</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                                </div>
+                <div class="menu-item">
+                    <img src="images/cafe-moka.jpg" alt="Café Moka" class="item-image">
+                    <div class="item-info">
+                        <h3 class="item-name">Café Moka</h3>
+                        <p class="item-price">€3.00</p>
+                        <p class="item-description-es">Café moka (espresso con chocolate y leche)</p>
+                        <p class="item-description">Espresso with chocolate and milk</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                            </div>
+        </section>
+    </main>
+    <!-- Cart Panel -->
+    <div class="cart-panel">
+        <div class="cart-header">
+            <h3>Your Order</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items"></div>
+                <div class="cart-actions">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount">€0.00</span>
+            </div>
+            <button class="submit-order">Place Order</button>
+        </div>
+    </div>
+    <div class="notification"></div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Luna Sants</p>
+                <p>Sants-Montjuïc, Barcelona</p>
+                <p><i class="fas fa-phone"></i> +34 123 456 789</p>
+                <p><i class="fas fa-envelope"></i> info@lunasants.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Opening Hours</h4>
+                <p>Monday - Friday: 11:00 AM - 10:00 PM</p>
+                <p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+                <p>Holidays: 10:00 AM - 10:00 PM</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Luna Sants. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="cart.js"></script>
+    <script src="menu.js"></script>
+    <script>
+        function displayTableNumber() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const tableNumber = urlParams.get('table');
+            const tableDisplay = document.getElementById('table-number-display');
+            if (tableNumber) {
+                tableDisplay.textContent = `Table ${tableNumber}`;
+                localStorage.setItem('tableNumber', tableNumber);
+            } else {
+                tableDisplay.textContent = 'No Table Selected';
+            }
+        }
+        document.addEventListener('DOMContentLoaded', displayTableNumber);
+    </script>
+</body>
+</html> 

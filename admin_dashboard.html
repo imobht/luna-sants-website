@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Order Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #8B5D33;
+            --secondary-color: #D4A76A;
+            --text-color: #333;
+            --light-bg: #F9F5F0;
+            --success-color: #4CAF50;
+            --warning-color: #FF9800;
+            --danger-color: #F44336;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin: 0;
+        }
+
+        .refresh-btn {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .refresh-btn:hover {
+            background-color: var(--primary-color);
+        }
+
+        .orders-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .order-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .order-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .order-id {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .order-status {
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .status-received {
+            background-color: var(--warning-color);
+            color: white;
+        }
+
+        .status-preparing {
+            background-color: #2196F3;
+            color: white;
+        }
+
+        .status-ready {
+            background-color: var(--success-color);
+            color: white;
+        }
+
+        .status-delivered {
+            background-color: #9C27B0;
+            color: white;
+        }
+
+        .order-info {
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .order-table {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .order-time {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .order-items {
+            padding: 1rem;
+        }
+
+        .order-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.8rem;
+        }
+
+        .item-name {
+            font-weight: 500;
+        }
+
+        .item-quantity {
+            background-color: var(--light-bg);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            margin-right: 0.5rem;
+        }
+
+        .item-price {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .order-total {
+            padding: 1rem;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .order-actions {
+            padding: 1rem;
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .action-btn {
+            flex: 1;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            font-weight: 500;
+        }
+
+        .prepare-btn {
+            background-color: #2196F3;
+            color: white;
+        }
+
+        .ready-btn {
+            background-color: var(--success-color);
+            color: white;
+        }
+
+        .deliver-btn {
+            background-color: #9C27B0;
+            color: white;
+        }
+
+        .cancel-btn {
+            background-color: var(--danger-color);
+            color: white;
+        }
+
+        .empty-orders {
+            text-align: center;
+            padding: 3rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .empty-orders i {
+            font-size: 3rem;
+            color: #ccc;
+            margin-bottom: 1rem;
+        }
+
+        .empty-orders h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .empty-orders p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Restaurant Order Dashboard</h1>
+            <button id="refresh-btn" class="refresh-btn">
+                <i class="fas fa-sync-alt"></i>
+                Refresh Orders
+            </button>
+        </header>
+
+        <div id="orders-container" class="orders-container">
+            <!-- Orders will be loaded here -->
+        </div>
+    </div>
+
+    <script src="order_processor.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            loadOrders();
+
+            document.getElementById('refresh-btn').addEventListener('click', loadOrders);
+        });
+
+        function loadOrders() {
+            const ordersContainer = document.getElementById('orders-container');
+            const orders = JSON.parse(localStorage.getItem('restaurantOrders')) || [];
+
+            if (orders.length === 0) {
+                ordersContainer.innerHTML = `
+                    <div class="empty-orders">
+                        <i class="fas fa-clipboard-list"></i>
+                        <h2>No Orders Yet</h2>
+                        <p>When customers place orders, they will appear here.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            ordersContainer.innerHTML = '';
+
+            // Sort orders by timestamp (newest first)
+            orders.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+
+            orders.forEach(order => {
+                const orderCard = document.createElement('div');
+                orderCard.className = 'order-card';
+
+                const orderTime = new Date(order.timestamp).toLocaleString();
+                const statusClass = `status-${order.status || 'received'}`;
+                const statusText = (order.status || 'received').charAt(0).toUpperCase() + (order.status || 'received').slice(1);
+
+                orderCard.innerHTML = `
+                    <div class="order-header">
+                        <span class="order-id">${order.orderId || 'New Order'}</span>
+                        <span class="order-status ${statusClass}">${statusText}</span>
+                    </div>
+                    <div class="order-info">
+                        <div class="order-table">Table ${order.tableNumber}</div>
+                        <div class="order-time">${orderTime}</div>
+                    </div>
+                    <div class="order-items">
+                        ${order.items.map(item => `
+                            <div class="order-item">
+                                <div>
+                                    <span class="item-quantity">x${item.quantity}</span>
+                                    <span class="item-name">${item.name}</span>
+                                </div>
+                                <span class="item-price">€${(item.price * item.quantity).toFixed(2)}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="order-total">
+                        <span>Total</span>
+                        <span>€${order.total.toFixed(2)}</span>
+                    </div>
+                    <div class="order-actions">
+                        <button class="action-btn prepare-btn" onclick="updateOrderStatus('${order.orderId || ''}', 'preparing')">
+                            <i class="fas fa-utensils"></i>
+                            Prepare
+                        </button>
+                        <button class="action-btn ready-btn" onclick="updateOrderStatus('${order.orderId || ''}', 'ready')">
+                            <i class="fas fa-check"></i>
+                            Ready
+                        </button>
+                        <button class="action-btn deliver-btn" onclick="updateOrderStatus('${order.orderId || ''}', 'delivered')">
+                            <i class="fas fa-hand-holding"></i>
+                            Deliver
+                        </button>
+                    </div>
+                `;
+
+                ordersContainer.appendChild(orderCard);
+            });
+        }
+
+        function updateOrderStatus(orderId, status) {
+            const orders = JSON.parse(localStorage.getItem('restaurantOrders')) || [];
+            const orderIndex = orders.findIndex(order => order.orderId === orderId);
+
+            if (orderIndex !== -1) {
+                orders[orderIndex].status = status;
+                localStorage.setItem('restaurantOrders', JSON.stringify(orders));
+                loadOrders();
+            }
+        }
+    </script>
+</body>
+</html>
